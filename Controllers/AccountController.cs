@@ -21,7 +21,7 @@ namespace api.Controllers
         }
 
         /// <summary>
-        /// Login Method
+        /// Login Method on Github
         /// </summary>
         /// <param name="loginDto"></param>
         /// <returns></returns>
