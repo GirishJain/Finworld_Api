@@ -20,6 +20,11 @@ namespace api.Controllers
             _signInManager = signInManager;
         }
 
+        /// <summary>
+        /// Login Method
+        /// </summary>
+        /// <param name="loginDto"></param>
+        /// <returns></returns>
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
