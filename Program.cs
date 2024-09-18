@@ -9,7 +9,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
-//Removing comments
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -111,8 +110,9 @@ app.UseCors(x => x
 .AllowAnyMethod()
 .AllowAnyHeader()
 .AllowCredentials()
+.WithOrigins("https://finworld001-g8cgetfzc4abfagj.eastasia-01.azurewebsites.net"));
 //.WithOrigins("https://localhost:44351")
-.SetIsOriginAllowed(origin => true));
+//.SetIsOriginAllowed(origin => true));
 
 app.UseAuthentication();
 app.UseAuthorization();
