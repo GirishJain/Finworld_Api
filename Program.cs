@@ -110,7 +110,7 @@ app.UseCors(x => x
 .AllowAnyMethod()
 .AllowAnyHeader()
 .AllowCredentials()
-.WithOrigins("https://finworld001-g8cgetfzc4abfagj.eastasia-01.azurewebsites.net"));
+.WithOrigins("https://finworld001-g8cgetfzc4abfagj.eastasia-01.azurewebsites.net", "https://girishjain.github.io"));
 //.WithOrigins("https://localhost:44351")
 //.SetIsOriginAllowed(origin => true));
 
