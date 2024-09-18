@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
-//Adding another comment
+//Removing comments
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
