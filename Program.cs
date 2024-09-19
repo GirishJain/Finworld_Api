@@ -61,7 +61,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
     options.Password.RequireLowercase = true;
     options.Password.RequireUppercase = true;
     options.Password.RequireNonAlphanumeric = true;
-    options.Password.RequiredLength = 12;
+    options.Password.RequiredLength = 8;
 })
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
@@ -111,7 +111,7 @@ app.UseCors(x => x
 .AllowAnyHeader()
 .AllowCredentials()
 .WithOrigins("https://finworld001-g8cgetfzc4abfagj.eastasia-01.azurewebsites.net", "https://girishjain.github.io"));
-//.WithOrigins("https://localhost:44351")
+////.WithOrigins("https://localhost:44351")
 //.SetIsOriginAllowed(origin => true));
 
 app.UseAuthentication();
