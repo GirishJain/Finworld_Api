@@ -1,5 +1,5 @@
 # This is a basic workflow to get started
-name: CI-build-and-push-image-for-dotnetapp
+name: CI-build-and-push-image-for-finapiapp
 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
@@ -43,7 +43,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./api/Dockerfile
+          file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/dockerfordotnetapi:latest, ${{ secrets.DOCKERHUB_USERNAME }}/dockerfordotnetapi:${{ github.run_number }}
  
